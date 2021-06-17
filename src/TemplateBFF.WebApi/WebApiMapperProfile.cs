@@ -8,6 +8,7 @@ namespace TemplateBFF.WebApi
     {
         public WebApiMapperProfile()
         {
+            CreateMap<ListUsersGet, ListUsersInput>();
             CreateMap<User, UserDto>();
         }
     }
