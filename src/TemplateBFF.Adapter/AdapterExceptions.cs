@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace TemplateBFF.DtiRoundAdapter
+namespace TemplateBFF.Adapter
 {
     [Serializable]
     public class AdapterExceptions : Exception

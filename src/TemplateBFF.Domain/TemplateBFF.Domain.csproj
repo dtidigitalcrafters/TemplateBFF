@@ -10,8 +10,4 @@
     <None Remove="Security\**" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Graph" Version="3.8.0" />
-  </ItemGroup>
-
 </Project>

@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using TemplateBFF.DtiRoundAdapter.Clients.Users;
+using TemplateBFF.Adapter.Clients.Users;
 using TemplateBFF.Domain.Models.Users;
 
-namespace TemplateBFF.DtiRoundAdapter
+namespace TemplateBFF.Adapter
 {
     public class AdapterMapperProfile : Profile
     {

@@ -10,7 +10,7 @@ using Microsoft.Identity.Web.TokenCacheProviders.InMemory;
 using Newtonsoft.Json;
 using TemplateBFF.DependencyInjection;
 using TemplateBFF.DependencyInjection.Swagger;
-using TemplateBFF.DtiRoundAdapter;
+using TemplateBFF.Adapter;
 using TemplateBFF.WebApi;
 using TemplateBFF.WebApi.Extensions;
 
@@ -51,7 +51,7 @@ namespace TemplateBFF
 
             services
                 .AddApplication()
-                .AddDtiRoundAdapter(Configuration.SafeGet<AdapterConfiguration>());
+                .AddAdapter(Configuration.SafeGet<AdapterConfiguration>());
         }
 
         private static void ConfigureAppInsights(IServiceCollection services)
@@ -89,9 +89,6 @@ namespace TemplateBFF
             app.UseVersionedSwagger(provider);
             app.UseStaticFiles();
             app.UseCookiePolicy();
-
-            app.UseAuthentication();
-            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

@@ -2,12 +2,13 @@
 using Newtonsoft.Json;
 using TemplateBFF.Domain.Adapters;
 using TemplateBFF.Domain.Models.Users;
-using TemplateBFF.DtiRoundAdapter.Clients.Users;
+using TemplateBFF.Adapter.Clients.Users;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
+using TemplateBFF.Adapter;
 
-namespace TemplateBFF.DtiRoundAdapter.Adapters.Users
+namespace TemplateBFF.Adapter.Adapters.Users
 {
     public class UserAdapter : IUserAdapter
     {
@@ -44,7 +45,7 @@ namespace TemplateBFF.DtiRoundAdapter.Adapters.Users
 
         private HttpClient GetClient()
         {
-            return httpClientFactory.CreateClient(Constants.RoundHttpClientName);
+            return httpClientFactory.CreateClient(Constants.AdapterClientName);
         }
     }
 }

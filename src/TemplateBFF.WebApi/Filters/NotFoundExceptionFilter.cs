@@ -1,9 +1,9 @@
-﻿namespace TemplateBFF.Filters
-{
-    using Microsoft.AspNetCore.Mvc;
-    using Microsoft.AspNetCore.Mvc.Filters;
-    using TemplateBFF.Domain;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
+using TemplateBFF.Domain;
 
+namespace TemplateBFF.Filters
+{
     public sealed class NotFoundExceptionFilter : IExceptionFilter
     {
         public void OnException(ExceptionContext context)

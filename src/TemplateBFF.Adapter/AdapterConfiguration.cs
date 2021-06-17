@@ -1,4 +1,4 @@
-﻿namespace TemplateBFF.DtiRoundAdapter
+﻿namespace TemplateBFF.Adapter
 {
     public class AdapterConfiguration
     {

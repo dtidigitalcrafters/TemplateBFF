@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TemplateBFF.DtiRoundAdapter.Clients.Users
+namespace TemplateBFF.Adapter.Clients.Users
 {
     public class UserValueGetResult
     {
