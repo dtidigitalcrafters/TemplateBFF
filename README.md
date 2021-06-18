@@ -3,7 +3,7 @@
   <img src="assets/logo-dti.png" alt="Logo" width="auto" height="200">
   <h1 align="center">Template para BFF em .NET 5</h1>
   <p align="center">
-    Simples implementação de um template de BFF em .Net 5 utilizando Clean Architecture. Utiliza casos de uso como estrutura principal. Template inspirado no repositório [Clean Architecture Manga](https://github.com/ivanpaulovich/clean-architecture-manga).
+    Simples implementação de um template de Backend For Frontend(BFF) em .Net 5 utilizando Clean Architecture. Utiliza casos de uso como estrutura principal. Template inspirado no repositório [Clean Architecture Manga](https://github.com/ivanpaulovich/clean-architecture-manga).
   </p>
 </p>
 
