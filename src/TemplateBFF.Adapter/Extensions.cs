@@ -8,7 +8,7 @@ namespace TemplateBFF.Adapter
     {
         public static async Task<Exception> ThrowHttpResponseException(this HttpResponseMessage response)
         {
-            throw new AdapterExceptions($"Erro em chamada de serviço. " +
+            throw new AdapterException($"Erro em chamada de serviço. " +
                 $"Uri :{response.RequestMessage.RequestUri} - " +
                 $"Código Http:{response.StatusCode} - " +
                 $"Conteúdo: {await response.Content?.ReadAsStringAsync()}");

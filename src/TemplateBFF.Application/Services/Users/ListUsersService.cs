@@ -1,14 +1,13 @@
-﻿using TemplateBFF.Domain;
+﻿using System;
+using System.Threading.Tasks;
+using TemplateBFF.Domain;
 using TemplateBFF.Domain.Adapters;
 using TemplateBFF.Domain.Models.Users;
 using TemplateBFF.Domain.Services;
-using System;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace TemplateBFF.Application.Services.Users
 {
-    public class ListUsersService: IListUsersService
+    public class ListUsersService : IListUsersService
     {
         private readonly IUserAdapter userAdapter;
 
@@ -20,7 +19,7 @@ namespace TemplateBFF.Application.Services.Users
 
         public async Task<ListUsersOutput> ListUsers(ListUsersInput input)
         {
-            ValidarInput(input);            
+            ValidarInput(input);
 
             var users = await userAdapter.ListUsers();
 

@@ -17,6 +17,7 @@
         private readonly IApiVersionDescriptionProvider _provider;
 
         private const string SITE_DTI = "https://dtidigital.com.br/";
+        private const string MIT_LICENSE = "https://opensource.org/licenses/MIT";
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ConfigureSwaggerOptions"/> class.
@@ -44,7 +45,7 @@
                 Description = "API responsável por retornar informações template",
                 Contact = new OpenApiContact() { Name = "Template", Email = "rafael.abdala@dtidigital.com.br" },
                 TermsOfService = new Uri(SITE_DTI),
-                License = new OpenApiLicense() { Name = "MIT", Url = new Uri("https://opensource.org/licenses/MIT") },
+                License = new OpenApiLicense() { Name = "MIT", Url = new Uri(MIT_LICENSE) },
             };
 
             if (description.IsDeprecated)

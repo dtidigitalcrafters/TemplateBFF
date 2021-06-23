@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using TemplateBFF.Domain.Models.Users;
 using TemplateBFF.Domain.Services;
 using TemplateBFF.WebApi.Dtos.Users;
