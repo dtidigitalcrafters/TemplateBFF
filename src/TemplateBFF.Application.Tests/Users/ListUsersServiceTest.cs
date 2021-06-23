@@ -1,12 +1,11 @@
 ﻿using Moq;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using TemplateBFF.Application.Services.Users;
 using TemplateBFF.Domain;
 using TemplateBFF.Domain.Adapters;
 using TemplateBFF.Domain.Models.Users;
 using TemplateBFF.Domain.Services;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace TemplateBFF.Application.Tests.Users
@@ -40,11 +39,12 @@ namespace TemplateBFF.Application.Tests.Users
                         Name = "Teste da Silva"
                     }
             };
-            var input = new ListUsersInput{
+            var input = new ListUsersInput
+            {
                 BirthdayMonth = 12
             };
 
-            _userAdapter.Setup(x => x.ListUsers()).ReturnsAsync( expectedUsers );
+            _userAdapter.Setup(x => x.ListUsers()).ReturnsAsync(expectedUsers);
 
             var users = await _listUsersServices.ListUsers(input);
 

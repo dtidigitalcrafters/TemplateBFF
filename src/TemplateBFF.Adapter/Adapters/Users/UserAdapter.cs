@@ -1,12 +1,11 @@
 ﻿using AutoMapper;
 using Newtonsoft.Json;
-using TemplateBFF.Domain.Adapters;
-using TemplateBFF.Domain.Models.Users;
-using TemplateBFF.Adapter.Clients.Users;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
-using TemplateBFF.Adapter;
+using TemplateBFF.Adapter.Clients.Users;
+using TemplateBFF.Domain.Adapters;
+using TemplateBFF.Domain.Models.Users;
 
 namespace TemplateBFF.Adapter.Adapters.Users
 {

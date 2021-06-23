@@ -5,14 +5,11 @@
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Options;
     using Microsoft.Extensions.PlatformAbstractions;
-    using Microsoft.OpenApi.Any;
     using Microsoft.OpenApi.Models;
-    using TemplateBFF.Filters;
     using Swashbuckle.AspNetCore.SwaggerGen;
-    using System;
     using System.IO;
-    using System.Linq;
     using System.Reflection;
+    using TemplateBFF.Filters;
     using Unchase.Swashbuckle.AspNetCore.Extensions.Extensions;
 
     public static class SwaggerExtensions

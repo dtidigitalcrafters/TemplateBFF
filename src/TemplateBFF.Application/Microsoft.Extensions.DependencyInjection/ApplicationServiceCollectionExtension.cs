@@ -1,6 +1,6 @@
-﻿using TemplateBFF.Application.Services.Users;
+﻿using System.Diagnostics.CodeAnalysis;
+using TemplateBFF.Application.Services.Users;
 using TemplateBFF.Domain.Services;
-using System.Diagnostics.CodeAnalysis;
 
 namespace Microsoft.Extensions.DependencyInjection
 {

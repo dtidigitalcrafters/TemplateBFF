@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TemplateBFF.Adapter.Clients.Users
+﻿namespace TemplateBFF.Adapter.Clients.Users
 {
     public class UserValueGetResult
     {

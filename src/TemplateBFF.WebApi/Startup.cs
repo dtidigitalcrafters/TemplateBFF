@@ -8,9 +8,9 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Identity.Web;
 using Microsoft.Identity.Web.TokenCacheProviders.InMemory;
 using Newtonsoft.Json;
+using TemplateBFF.Adapter;
 using TemplateBFF.DependencyInjection;
 using TemplateBFF.DependencyInjection.Swagger;
-using TemplateBFF.Adapter;
 using TemplateBFF.WebApi;
 using TemplateBFF.WebApi.Extensions;
 

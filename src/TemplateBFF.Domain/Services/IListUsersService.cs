@@ -1,5 +1,5 @@
-﻿using TemplateBFF.Domain.Models.Users;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using TemplateBFF.Domain.Models.Users;
 
 namespace TemplateBFF.Domain.Services
 {

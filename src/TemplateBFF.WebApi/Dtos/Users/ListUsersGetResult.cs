@@ -4,6 +4,6 @@ namespace TemplateBFF.WebApi.Dtos.Users
 {
     public class ListUsersGetResult
     {
-        public IEnumerable<UserDto> Users { get; set; } 
+        public IEnumerable<UserDto> Users { get; set; }
     }
 }

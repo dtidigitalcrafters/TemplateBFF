@@ -1,8 +1,8 @@
-﻿using TemplateBFF.Domain.Adapters;
+﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using TemplateBFF.Adapter;
 using TemplateBFF.Adapter.Adapters.Users;
-using System;
-using System.Diagnostics.CodeAnalysis;
+using TemplateBFF.Domain.Adapters;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
